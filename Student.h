@@ -1,24 +1,23 @@
-#include<iostream>
-#include<vector>
-#include<string>
-using namespace std;
-
 #ifndef STUDENT_H
 #define STUDENT_H
 
+#include <iostream>
+#include <string>
+using namespace std;
 
 class Student
 {
 	private:
-			string StudentName;
-			int StudentAge;
+			string StudentName ;
+			int StudentAge ;
 	public:
-	student();
-	getName();
-	getAge();
-	setName(string);
-	setAge(int);
-}
+	Student();
+	Student(int ,string);
+	string getName();
+	int getAge();
+	void setName(string );
+	void setAge(int Age);
+};
 
 
 

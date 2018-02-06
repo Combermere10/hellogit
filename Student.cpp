@@ -2,25 +2,30 @@
 
 Student::Student()
 {
-
 }
 
-Student::getName()
+Student::Student(int Age, string name)
+{
+	StudentName = name;
+	StudentAge = Age;
+}
+
+string Student::getName()
 {
 	return StudentName;
 }
 
-Student::setName(string name)
+void Student::setName(string name)
 {
 	StudentName = name;
 }
 
-Student::getAge()
+int Student::getAge()
 {
 	return StudentAge;
 }
 
-Student::setAge(int Age)
+void Student::setAge(int Age)
 {
 	StudentAge = Age;
 }
